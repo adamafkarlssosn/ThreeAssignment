@@ -27,7 +27,6 @@ export default class UIManager {
         this.infoWindow.style.display = 'block';
     }
 
-    // Hide button
     hideInfoWindow() {
         this.infoWindow.style.display = 'none';
     }
