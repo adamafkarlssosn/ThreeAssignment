@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "14.17.3"
+    "node": "20.9.0"
   },
   "dependencies": {
     "earcut": "^2.2.4",
