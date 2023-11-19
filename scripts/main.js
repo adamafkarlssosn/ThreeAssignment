@@ -1,7 +1,7 @@
-import UIManager from './managers/uiManager';
-import Controls from './controls/controls';
-import CadManager from './managers/cadManager';
-import SceneManager from './managers/sceneManager';
+import UIManager from './managers/uiManager.js';
+import Controls from './controls/controls.js';
+import CadManager from './managers/cadManager.js';
+import SceneManager from './managers/sceneManager.js';
 
 // Main canvas Element
 const canvasElement = document.getElementById('viewer');

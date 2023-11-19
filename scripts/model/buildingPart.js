@@ -1,5 +1,5 @@
-import { BufferAttribute, BufferGeometry, DoubleSide, Matrix4, Mesh, MeshLambertMaterial, Object3D, PlaneGeometry, Vector3 } from "three";
-import earcut from 'earcut'
+import { BufferAttribute, BufferGeometry, DoubleSide, Matrix4, Mesh, MeshLambertMaterial, Object3D, Vector3 } from "three";
+import {Earcut} from 'three/extras/Earcut.js'
 
 export default class BuildingPart extends Object3D
 {
@@ -39,7 +39,7 @@ export default class BuildingPart extends Object3D
     {
         const flatBuffer = buffer.flatMap(point => point.toArray());
             
-        const triangles = earcut(flatBuffer,null,3); // The roof. Triangulated depending on the input shape.
+        const triangles = Earcut.triangulate(flatBuffer,null,3); // The roof. Triangulated depending on the input shape.
 
         const vertices = new Float32Array(flatBuffer); // create buff
         const indices = new Uint16Array(triangles); // ind buff

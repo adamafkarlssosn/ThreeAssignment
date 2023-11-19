@@ -1,5 +1,5 @@
 import { AmbientLight, DirectionalLight, Mesh, MeshBasicMaterial, PerspectiveCamera, PlaneGeometry, Raycaster, Scene, TextureLoader, Vector2, WebGLRenderer } from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 export default class SceneManager
 {

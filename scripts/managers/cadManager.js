@@ -1,5 +1,5 @@
 import { BufferGeometry, LineBasicMaterial, LineLoop,Points, PointsMaterial, Vector3 } from "three";
-import BuildingPart from "../model/buildingPart";
+import BuildingPart from "../model/buildingPart.js";
 
 export default class CadManager
 {

@@ -25,9 +25,18 @@
 				z-index: 1;
 			}
 		</style>
+				<script type="importmap">
+					{
+					  "imports": {
+						"three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+						"three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/",
+						"three/extras/": "https://unpkg.com/three@0.158.0/src/extras/"
+					  }
+					}
+				  </script>
 	</head>
 	<body>
-		<script type="module" src="../scripts/main.js"></script>
+		<script type="module" src="/scripts/main.js"></script>
 		<div id="infoWindow" class="infoWindow">
 			<div id="drawingTools" style="display: flex; padding: 20px;">
 				<button  id="drawBtn"> Start to draw</button>
